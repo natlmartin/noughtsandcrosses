@@ -1,6 +1,6 @@
 const state = {
     gameElement: document.querySelector('.game'),
-    symbols: ['o', 'x'],
+    symbols: ['O', 'X'],
     // cells: [null, null, null, null, null, null, null, null, null]
     cells: Array(9).fill(null),
     winningCombinations: [
