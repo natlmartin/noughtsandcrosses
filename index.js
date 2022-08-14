@@ -60,7 +60,7 @@ function drawBoard() {
 
 function checkForWinner() {
     return state.winningCombinations.some(combo => {
-        const cells = combo.map(index => state.cells[index]
+        const cells = combo.map(index => state.cells[index])
                                 // the array does not have a null AND all of the values are the same
 
         return !(cells.includes(null)) && new Set(cells).size === 1 // Set gives back an array but just with unique values
